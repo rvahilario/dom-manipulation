@@ -17,6 +17,11 @@
 
         const divsArray = [...divs]
         divsArray.forEach(element => element.classList.add('destaque'))
+
+        const ultimosElementos = document.getElementsByClassName('ultimo')
+        for(let element of ultimosElementos){
+            element.classList.remove('destaque')
+        }
     </script>
 </body>
 </html>
